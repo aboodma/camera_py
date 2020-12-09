@@ -31,9 +31,9 @@ while True:
             res = x.text
             if (res == "1"):
 
-              Led.red_led
+              Led.red_led("null")
             else:
-              Led.greenLed
+              Led.greenLed("null")
             
     # display the image preview
     cv2.imshow("code detector", img)
