@@ -4,7 +4,7 @@ import requests
 from time import sleep
 import led
 
-
+led = led()
 url = 'https://emostaxi.com'
 # set up camera object
 cap = cv2.VideoCapture(0)
