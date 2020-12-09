@@ -1,9 +1,8 @@
 import RPi.GPIO as GPIO
 from time import sleep
 class Led:
-    
 
-    def redLed():
+    def red_led(self):
         GPIO.setmode(GPIO.BCM)
         GPIO.setwarnings(False)
         GPIO.setup(17,GPIO.OUT)
@@ -12,7 +11,7 @@ class Led:
         sleep(5)
         GPIO.output(17,GPIO.LOW)
 
-    def greenLed():
+    def greenLed(self):
         GPIO.setmode(GPIO.BCM)
         GPIO.setwarnings(False)
         GPIO.setup(17,GPIO.OUT)
