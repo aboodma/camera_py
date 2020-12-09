@@ -2,7 +2,7 @@
 import cv2
 import requests
 from time import sleep
-import Led
+from Led import Led
 
 
 url = 'https://emostaxi.com'
@@ -31,9 +31,9 @@ while True:
             res = x.text
             if (res == "1"):
 
-              Led.Led.red_led
+              Led.red_led
             else:
-              Led.Led.greenLed
+              Led.greenLed
             
     # display the image preview
     cv2.imshow("code detector", img)
